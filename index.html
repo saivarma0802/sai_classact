@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike - Just Do It</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .center-text {
+      text-align: center;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+    }
+    .success-message {
+      color: lightgreen;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function showAlert(product) {
+      alert("You clicked to view " + product);
+    }
+    function toggleMenu() {
+      const links = document.querySelector('nav .nav-links');
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="logo"><strong>NIKE</strong></div>
+    <button onclick="toggleMenu()">☰</button>
+    <div class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#video">Watch</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>JUST DO IT</h1>
+    <p>Experience the power of performance and innovation in every Nike product.</p>
+  </header>
+
+  <section id="video">
+    <h2 class="center-text">Inspiration in Motion</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2 class="center-text">Featured Products</h2>
+    <div class="product-section">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Nike Shoe" loading="lazy">
+        <h3>Nike Air Max</h3>
+        <p>Ultimate comfort meets sleek design. Perfect for your everyday hustle.</p>
+        <button onclick="showAlert('Nike Air Max')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1587049352850-0195e3f01a0f" alt="Nike Shirt" loading="lazy">
+        <h3>Nike Dri-FIT</h3>
+        <p>Stay cool and dry during the most intense workouts.</p>
+        <button onclick="showAlert('Nike Dri-FIT')">Shop Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1621402645571-2f37aebc2541" alt="Nike Shorts" loading="lazy">
+        <h3>Nike Flex Shorts</h3>
+        <p>Unrestricted movement and modern style in one package.</p>
+        <button onclick="showAlert('Nike Flex Shorts')">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="center-text">Get in Touch</h2>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+      <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+      <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="newsletter">
+    <h2 class="center-text">Subscribe for Updates</h2>
+    <form method="POST">
+      <input type="email" name="newsletter_email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nike. All rights reserved.</p>
+  </footer>
+</body>
+</html>
