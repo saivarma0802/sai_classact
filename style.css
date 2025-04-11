@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?adidas,shoes');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #111;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3em 1em;
+}
+
+/* Section Styling */
+section {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 2em;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Button */
+button {
+  padding: 0.7em 1.2em;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+  width: 100%;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Video */
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Section Headers */
+h2 {
+  margin-top: 0;
+}
